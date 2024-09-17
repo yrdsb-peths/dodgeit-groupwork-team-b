@@ -23,5 +23,8 @@ public class MyWorld extends World
         
         Banana banana = new Banana();
         addObject(banana, 600, 100);
+        
+        Applo applo = new Applo();
+        addObject(applo, 600, 200);
     }
 }
