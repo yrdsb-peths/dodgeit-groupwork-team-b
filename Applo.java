@@ -3,7 +3,7 @@ public class Applo extends Actor
 {
     public void act()
     {
-        move(-10);
+        move(-15);
         
         if(getX() <= 0)
         {
@@ -16,15 +16,13 @@ public class Applo extends Actor
             getWorld().addObject(gameOver, 300, 200);
             getWorld().removeObject(this);
         }
-        
     }
     public void resetApplo()
     {
         int num = Greenfoot.getRandomNumber(2);
-        if(num == 0)
+        if(num == 1)
         {
             setLocation(600,100);
-            
         }
         else
         {
